@@ -31,7 +31,7 @@ def rosenbrock_fun(x):
     return 100*(x[1] - x[0]**2)**2 + (x[0]-1)**2
 
 
-def pso(func, bounds, swarm_size=10, inertia=0.5, pa=0.8, ga=0.9, 
+def pso(func, bounds, swarm_size=20, inertia=0.729844, pa=1.496180, ga=1.496180,
         max_vnorm=10, num_iters=100, verbose=False, func_name=None):
     """Perticle Swarm Optimization (PSO)
     # Arguments
